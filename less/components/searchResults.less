@@ -1,0 +1,38 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 5em;
+
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__input {
+    width: 60%;
+    font-size: 1.6em;
+    padding: 0.5em 1em;
+  }
+
+  &__results {
+    margin-top: 2em;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      color: rgb(65, 65, 65);
+    }
+  }
+}

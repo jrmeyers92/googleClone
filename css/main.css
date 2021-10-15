@@ -1,0 +1,134 @@
+.nav {
+  margin: 0;
+}
+@media (min-width: 1001px) {
+  .nav {
+    height: 15vh;
+    background-color: #6a8d73;
+    display: flex;
+    align-items: center;
+  }
+}
+.nav__hamburger {
+  width: 50px;
+  height: 50px;
+  margin: 2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1001px) {
+  .nav__hamburger {
+    display: none;
+  }
+}
+.nav__hamburgerLine {
+  width: 100%;
+  height: 6px;
+  background-color: black;
+  position: relative;
+  display: block;
+  transform: all 0.3s ease;
+}
+.nav__hamburgerLine::after,
+.nav__hamburgerLine::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  transform: translateY(13px);
+  background-color: black;
+  transition: all 0.3s ease;
+}
+.nav__hamburgerLine::before {
+  transform: translateY(-13px);
+}
+.nav .nav__hamburger-open .nav__hamburgerLine {
+  visibility: hidden;
+}
+.nav .nav__hamburger-open .nav__hamburgerLine::before {
+  transform: rotate(45deg);
+  top: 0;
+  visibility: visible;
+}
+.nav .nav__hamburger-open .nav__hamburgerLine::after {
+  transform: rotate(-225deg);
+  top: 0;
+  visibility: visible;
+}
+.nav__list {
+  font-size: 1.6em;
+  transform: translateX(-40rem);
+  transition: all 0.3s;
+  background-color: #6a8d73;
+  display: inline-block;
+}
+@media (min-width: 1001px) {
+  .nav__list {
+    transform: translateX(0);
+    display: flex;
+  }
+}
+.nav .nav__list-open.nav__list {
+  transform: translateX(0);
+}
+.nav__item {
+  list-style-type: none;
+  padding: 0.3em;
+  margin: 1em;
+}
+.nav__link {
+  color: white;
+}
+.nav__item:hover .nav__link,
+.nav__item:hover .nav__active {
+  color: orange;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 5em;
+}
+.search__form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search__input {
+  width: 60%;
+  font-size: 1.6em;
+  padding: 0.5em 1em;
+}
+.search__results {
+  margin-top: 2em;
+}
+.search__list {
+  list-style-type: none;
+}
+.search__link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.search__link:hover,
+.search__link:active {
+  color: #414141;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+header {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}

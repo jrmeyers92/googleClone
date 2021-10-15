@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__hamburger" id="nav__hamburger">
+                <span class="nav__hamburgerLine"></span>
+            </div>
+
+            <ul class="nav__list" id="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Experience</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search">
+            <form id="searchForm" class="search__form">
+                <input type="search" id="searchBar" class="search__input" placeholder="Search">
+            </form>   
+        <div class="results">
+            <ul class="results__list" id="results__list" class="search__results"></ul>
+            
+            <button class="first" id="first">First</button>
+            <button class="prev" id="prev">Prev</button>
+            <button class="next" id="next">Next</button>
+            <button class="last" id="last">Last</button>
+            <p id="pages"></p>
+        </div> 
+                
+        </div>
+        </section>
+        
+    </main>
+</body>
+</html>
